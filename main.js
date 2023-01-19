@@ -13,9 +13,9 @@ boton.addEventListener("click", function(){
 
 
   }else if (numeroUsuario > numeroMagico){
-    mensaje.innerHTML = "El número es menor que "+numeroUsuario +"🔽"
+    mensaje.innerHTML = "El número es menor que "+numeroUsuario +" 🔽"
   }else{
-    mensaje.innerHTML = "El número es mayor que "+numeroUsuario +"🔼"
+    mensaje.innerHTML = "El número es mayor que "+numeroUsuario +" 🔼"
   }
 
 });
