@@ -9,6 +9,8 @@ boton.addEventListener("click", function(){
   let numeroUsuario = parseInt(input.value);
   if (numeroUsuario === numeroMagico) {
     mensaje.innerHTML = "Ganaste ✨"
+    document.querySelector("main").classList.add("success");
+
 
   }else if (numeroUsuario > numeroMagico){
     mensaje.innerHTML = "El número es menor que "+numeroUsuario +"🔽"
