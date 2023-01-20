@@ -11,10 +11,12 @@ boton.addEventListener("click", function(){
     mensaje.innerHTML = "Ganaste ✨"
     document.querySelector("main").classList.add("success");
 
-
-  }else if (numeroUsuario > numeroMagico){
-    mensaje.innerHTML = "El número es menor que "+numeroUsuario +" 🔽"
-  }else{
+  }else if (isNaN(numeroUsuario) ){
+    mensaje.innerHTML = "Ingresa un número 🤔" 
+  
+}else if (numeroUsuario > numeroMagico){
+  mensaje.innerHTML = "El número es menor que "+numeroUsuario +" 🔽"
+}else{
     mensaje.innerHTML = "El número es mayor que "+numeroUsuario +" 🔼"
   }
 
